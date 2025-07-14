@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nicolas Urrego • Portfolio</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+<header class="site-header">
+  <a href="https://vault.nicolasurrego.com" class="vault-link">My vault</a>
+  <nav class="site-nav">
+    <a href="#hero">Home</a>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contacts</a>
+  <div class="lang-switcher">
+    <!-- current language button -->
+    <button class="lang-current" title="Español" aria-haspopup="true">
+      <img src="img/colombia.png" alt="" class="flag-icon">
+    </button>
+
+    <!-- hidden until hover -->
+    <ul class="lang-list" role="menu">
+      <li role="none">
+        <a role="menuitem" href="?lang=es" title="Español">
+          <img src="img/colombia.png" alt="" class="flag-icon">
+        </a>
+      </li>
+      <li role="none">
+        <a role="menuitem" href="?lang=ja" title="日本語">
+          <img src="img/japan.png" alt="" class="flag-icon">
+        </a>
+      </li>
+      <li role="none">
+        <a role="menuitem" href="?lang=en" title="English">
+          <img src="img/united-states.png" alt="" class="flag-icon">
+        </a>
+      </li>
+      <li role="none">
+        <a role="menuitem" href="?lang=pt" title="Português">
+          <img src="img/brazil.png" alt="" class="flag-icon">
+        </a>
+      </li>
+    </ul>
+      
+  </div>
+
+
+  </nav>
+</header>
+
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero-section">
+    <div class="hero-text">
+      <p class="role">ML ENGINEER / WRITTER</p>
+      <h1>Hello, I’m <br>Nicolas Urrego</h1>
+      <p class="tagline">
+        Apasionado aventurero que le encanta trabajar con la mas emocionante tecnología.<br>
+        Vivo un dia al dia y reflejo lo mas impactante en mi bahul.<br>
+        Te recomiendo darle un vistazo a la ruleta de Nico, de seguro te sorprendes!
+      </p>
+    </div>
+    <div class="hero-image">
+      <img src="img/my_photo.png" alt="Portrait of Nicolas Urrego">
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about-section">
+    <h2>About me</h2>
+    <div class="section-box">
+      <div class="about-text">
+        <p>
+          Rooted in Colombia and driven by curiosity, I dedicate each day to understanding life and transforming my insights into practical tools that enhance our world. Based in Tokyo since 2023.
+        </p>
+        <p>
+          I earned a degree in Information Processing from HAL Tokyo (2024–2026) and am now committed to exploring emerging technologies that empower humanity and accelerate progress. My primary passion lies in AI training—most of my highlighted projects explore this field, though I have also led creative and financial initiatives.
+        </p>
+        <p>
+          In my leisure time, I explore the world of anime and challenge myself with rapid chess matches on chess.com—activities that sharpen my strategic thinking and inspire creativity.
+        </p>
+        <p>
+          Below is a selection of projects I’m most proud of:
+        </p>
+        <ul>
+          <li>For feedback or to show support, feel free to leave a comment or star the repository on GitHub.</li>
+          <li>To see more personal reflections, visit my blog “My Mind,” where I share elegant, humorous and deeply philosophical snapshots of daily life.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects-section">
+  <h2>Projects</h2>
+  <div class="section-box">
+    <!-- Ring carousel -->
+    <div class="carousel-container" id="carousel">
+      <div class="carousel-track">
+        <div class="project-card">Project 1</div>
+        <div class="project-card">Project 2</div>
+        <div class="project-card">Project 3</div>
+        <div class="project-card">Project 4</div>
+        <div class="project-card">Project 5</div>
+        <!-- add as many as you like -->
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section">
+    <h2>Get in Touch</h2>
+    <form class="contact-form">
+      <label>
+        Name
+        <input type="text" name="name" placeholder="Your Name">
+      </label>
+      <label>
+        Email
+        <input type="email" name="email" placeholder="you@example.com">
+      </label>
+      <label>
+        Message
+        <textarea name="message" rows="5" placeholder="Your message..."></textarea>
+      </label>
+      <button type="submit">Send</button>
+    </form>
+    <div class="social-links">
+      <a href="https://www.instagram.com/nicurrego/" target="_blank" rel="noopener noreferrer">
+        <img src="img/instagram.png" alt="Instagram">
+      </a>
+      <a href="https://github.com/nicurrego" target="_blank" rel="noopener noreferrer">
+        <img src="img/github.png" alt="GitHub">
+      </a>
+      <a href="https://www.linkedin.com/in/nicurrego/" target="_blank" rel="noopener noreferrer">
+        <img src="img/in.png" alt="LinkedIn">
+      </a>
+      <a href="mailto:nicurrego@gmail.com" target="_blank" rel="noopener noreferrer">
+        <img src="img/email.png" alt="Email">
+      </a>
+    </div>
+    <footer class="footer-credit">
+      © Nicolas Urrego Diaz 2025
+    </footer>
+  </section>
+  <script src="js/main.js"></script>
+</body>
+</html>
