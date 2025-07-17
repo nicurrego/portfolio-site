@@ -8,8 +8,6 @@ function initParallax() {
         return;
     }
 
-    console.log('Parallax initialized');
-
     function updateParallax() {
         const scrolled = window.pageYOffset;
         
@@ -26,11 +24,6 @@ function initParallax() {
     
     // Initial call
     updateParallax();
-    
-    // Debug info (optional - remove in production)
-    window.addEventListener('scroll', () => {
-        console.log('Scroll position:', window.pageYOffset);
-    });
 }
 
 // Enhanced initialization with fallback

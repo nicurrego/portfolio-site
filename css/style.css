@@ -253,7 +253,7 @@ body {
   height: 50vh;
   max-height: 600px;
   border: 4px solid var(--silver);
-  background: url("/img/panel_background.png") no-repeat center/cover;
+  background: url("../img/panel_background.png") no-repeat center/cover;
   position: relative;
 }
 
