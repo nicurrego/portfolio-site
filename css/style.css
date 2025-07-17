@@ -239,7 +239,6 @@ body {
 
 /* About box: start collapsed, animate height */
 .about-section .section-box {
-  padding:        2rem;
   border:         4px solid var(--gold);
   background:     rgba(10,10,10,0.8);
   height:         auto;
@@ -310,13 +309,19 @@ body {
 /* 8) Contact Section                                                       */
 /* ───────────────────────────────────────────────────────────────────────── */
 .contact-section {
-  padding:        4rem 4rem;
+  padding:        2rem 4rem;
+}
+.contact-section .section-box {
+  margin-left: 0px;
+  padding: 5px 5px;
+  height:         auto;
+  border-radius: 0px;
 }
 
 .contact-form {
   display:        grid;
   gap:            1rem;
-  max-width:      600px;
+  max-width:      500px;
 }
 
 .contact-form label {
@@ -355,6 +360,7 @@ body {
 /* ───────────────────────────────────────────────────────────────────────── */
 .social-links {
     display: flex;
+    align-items: center;
     gap: 3.5rem;
     margin: 2rem;
 }
@@ -420,12 +426,16 @@ body {
 }
 
 #sora-layer {
+  /* width: 2191px;
+  height: 720px ; */
   z-index: 1;
 }
 
 #tairona-layer {
   z-index: 2;
-  top: 300px; /* Match the test implementation */
+  top: 70vh; /* Match the test implementation */
+  left: 140px;
+  height: 145vh;
 }
 
 #tairona-layer img {
@@ -454,8 +464,7 @@ body {
   margin: 2rem 0;
 }
 
-.about-section .section-box,
-.contact-section .section-box {
+.about-section .section-box {
   border-radius: 1rem;
   padding: 2rem;
 }
