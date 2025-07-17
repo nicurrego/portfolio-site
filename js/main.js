@@ -1,3 +1,46 @@
+// Improved parallax implementation with error handling and debug logging
+function initParallax() {
+    const soraLayer = document.getElementById('sora-layer');
+    const taironaLayer = document.getElementById('tairona-layer');
+
+    if (!soraLayer || !taironaLayer) {
+        console.error('Parallax layers not found!');
+        return;
+    }
+
+    console.log('Parallax initialized');
+
+    function updateParallax() {
+        const scrolled = window.pageYOffset;
+        
+        // Different speeds for each layer
+        const soraSpeed = scrolled * -0.1;    // Slow
+        const taironaSpeed = scrolled * -0.5; // Faster
+        
+        soraLayer.style.transform = `translateY(${soraSpeed}px)`;
+        taironaLayer.style.transform = `translateY(${taironaSpeed}px)`;
+    }
+
+    // Add scroll listener
+    window.addEventListener('scroll', updateParallax);
+    
+    // Initial call
+    updateParallax();
+    
+    // Debug info (optional - remove in production)
+    window.addEventListener('scroll', () => {
+        console.log('Scroll position:', window.pageYOffset);
+    });
+}
+
+// Enhanced initialization with fallback
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initParallax);
+} else {
+    initParallax();
+}
+
+// Your existing carousel code
 (function() {
   const container = document.getElementById('carousel');
   const track     = container.querySelector('.carousel-track');
