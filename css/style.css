@@ -25,6 +25,23 @@ body {
 }
 
 /* ───────────────────────────────────────────────────────────────────────── */
+/* 1.5) Main Container                                                     */
+/* ───────────────────────────────────────────────────────────────────────── */
+.main-container {
+  max-width: 1440px;
+  padding-bottom: 20px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* Update responsive breakpoint */
+@media (max-width: 1440px) {
+  .main-container {
+    padding: 0 2rem;
+  }
+}
+
+/* ───────────────────────────────────────────────────────────────────────── */
 /* 2) Header / Nav                                                        */
 /* ───────────────────────────────────────────────────────────────────────── */
 .site-header {
@@ -236,6 +253,7 @@ body {
 }
 /* Projects box */
 .projects-section .section-box {
+  max-height: 600px;
   border:         4px solid var(--silver);
   background-image: url("/img/panel_background.png");
   background-position: center center;
@@ -293,7 +311,6 @@ body {
 /* ───────────────────────────────────────────────────────────────────────── */
 .contact-section {
   padding:        4rem 4rem;
-  background:     var(--dark);
 }
 
 .contact-form {
